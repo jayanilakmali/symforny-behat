@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/php:8.1.2-node-browsers
+      - image: circleci/php:7.4-node-browsers
 
     steps:
       - checkout
@@ -36,4 +36,3 @@ jobs:
       - run:
           name: "Run Behat test"
           command: vendor/bin/behat
-          #abc
