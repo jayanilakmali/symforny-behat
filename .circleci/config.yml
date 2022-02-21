@@ -9,7 +9,7 @@ jobs:
       - run: php --version
 
       - run: sudo apt update
-      - run: sudo docker-php-ext-install zip
+      #- run: sudo docker-php-ext-install zip
 
       - restore_cache:
           keys:
