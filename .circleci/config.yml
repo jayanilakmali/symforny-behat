@@ -30,7 +30,7 @@ jobs:
             - ./vendor
       - run:
           name: Run web server
-          command: php bin/console server:start
+          command: php bin/console symfony server:start
           background: true
 
       # run Behat test
