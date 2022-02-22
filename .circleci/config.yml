@@ -9,6 +9,7 @@ jobs:
       - run: php --version
 
       - run: sudo apt update
+      - run: sudo apt install symfony cli
       #- run: sudo docker-php-ext-install zip
 
       - restore_cache:
