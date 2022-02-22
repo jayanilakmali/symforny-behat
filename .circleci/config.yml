@@ -33,7 +33,7 @@ jobs:
             - ./vendor
       - run:
           name: Run web server
-          command: symfony server:ca:install && symfony server:start -d
+          command: sudo symfony server:ca:install && symfony server:start -d
           background: true
 
       # run Behat test
