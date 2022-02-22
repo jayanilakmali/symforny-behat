@@ -8,8 +8,10 @@ jobs:
       - checkout
       - run: php --version
 
+      - run: echo 'deb [trusted=yes] https://repo.symfony.com/apt/ /' | sudo tee /etc/apt/sources.list.d/symfony-cli.list
       - run: sudo apt update
-      - run: sudo apt install symfony cli
+      - run: sudo apt install symfony-cli
+      
       #- run: sudo docker-php-ext-install zip
 
       - restore_cache:
