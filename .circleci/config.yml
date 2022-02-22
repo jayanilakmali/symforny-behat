@@ -34,7 +34,7 @@ jobs:
             - ./vendor
       - run:
           name: Run web server
-          command: symfony server:start -d --no-tls
+          command: symfony server:start && symfony open:local
           background: true
 
       # run Behat test
